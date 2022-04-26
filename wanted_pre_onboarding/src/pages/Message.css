@@ -1,0 +1,35 @@
+.Message {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+}
+
+.Message__container {
+  border-bottom: 1px solid rgb(235, 238, 240);
+  margin-bottom: 0.5rem;
+}
+
+.Message__wrapper {
+  height: 97px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  color: white;
+  background-color: #097e4d;
+}
+
+.Message__profile {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.Message__content {
+  flex: 1 0 80vh;
+  border: 2px solid #097e4d;
+  display: flex;
+  align-items: center;
+  overflow-y: scroll;
+}

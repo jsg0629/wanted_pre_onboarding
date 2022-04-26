@@ -1,0 +1,41 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.tap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 3px 0px;   
+}
+
+.tap a:hover {
+  color: black;
+  transition: all 0.5s ease-out;
+}
+
+
+main {
+  max-width: 640px;
+}
+
+.features {
+  width: 564px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(235, 238, 240);
+  flex: 1 0 0;
+}
+
+
+
+
