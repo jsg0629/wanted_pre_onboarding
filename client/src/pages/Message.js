@@ -7,7 +7,7 @@ const Message = () => {
       <div className="Message__container">
         <div className="Message__wrapper">
           <div className="Message__profile">
-          Guest11245 Message
+          Guest Message
           </div>
         </div>
       </div>

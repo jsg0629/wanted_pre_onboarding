@@ -7,7 +7,7 @@ const MyPage = () => {
       <div className="myInfo__container">
         <div className="myInfo__wrapper">
           <div className="myInfo__profile">
-            Guest11245 Profile
+            Guest Profile
           </div>
         </div>
         
