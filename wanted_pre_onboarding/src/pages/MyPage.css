@@ -10,6 +10,7 @@
 }
 
 .myInfo__wrapper {
+  font-weight: 500;
   height: 97px;
   display: flex;
   flex-direction: column;
