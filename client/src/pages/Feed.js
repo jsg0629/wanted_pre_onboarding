@@ -1,18 +1,37 @@
-import React from "react";
 import "./Feed.css";
+import dummyTweets from "../static/dummyData";
+import Tweet from "../component/Tweet";
+import Dropdown from "../component/Dropdown";
+import React, { useState } from "react";
 
-const Feed = (props) => {
+const Feed = () => {
+  const [filteredTweets, filteringTweets] = useState(dummyTweets);
+
+
   return (
-    <section className="Feed">
+    <>
       <div className="Feed__container">
         <div className="Feed__wrapper">
           <div className="Feed__detail">
-            <p className="Feed__detailName">JSG JIwitter Feed</p>
+            <p className="Feed__detailName">JIwitter Feed</p>
+          </div>
+          <div className="Feed__count" role="status">
+            <span className="Feed__count__text">
+              {`total: ${filteredTweets.length}`}
+            </span>
           </div>
         </div>
       </div>
-      <div className="Feed__content"></div>
-    </section>
+      <Dropdown
+        tweets={dummyTweets}
+        filteringTweets={filteringTweets}
+      />
+      <ul className="Feed__contents">
+        {filteredTweets.map((el) => {
+          return <Tweet key={el.id} tweet={el} />;
+        })}
+      </ul>
+    </>
   );
 };
 
