@@ -46,3 +46,8 @@
   border: 2px solid #003380;
   overflow-y: scroll;
 }
+
+.darkmode {
+  background-color: black;
+  color : white
+} 

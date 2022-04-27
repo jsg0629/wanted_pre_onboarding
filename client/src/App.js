@@ -15,11 +15,11 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <main>
-            <Tap />
+            <Tap/>
             <section className="features">
               <Switch>
                 <Route exact path={"/"}>
-                  <Feed />
+                  <Feed/>
                 </Route>
                 <Route path={"/message"}>
                   <Message />

@@ -1,0 +1,39 @@
+#toggle {
+  position: relative;
+}
+
+
+.toggle__label {
+    cursor: pointer;
+    width: 37px;
+    height: 20px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+}
+
+.toggle__label::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.toggle__btn {
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.toggle__btn:checked + label {
+    background: rgb(31, 26, 26);
+}
+
+.toggle__btn:checked + label::after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}

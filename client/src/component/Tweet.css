@@ -31,7 +31,6 @@
 
 .tweet__userInfo--wrapper > .tweet__username {
   display: inline-block;
-  color: rgb(15, 20, 25);
   font-weight: 700;
   margin-left: 0.5rem;
 }

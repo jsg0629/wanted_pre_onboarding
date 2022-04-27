@@ -5,7 +5,7 @@ import Modal from './Modal/Modal';
 import './Tap.css';
 
 
-const Sidebar = () => {
+const Tap = () => {
   const [openModal, setOpenModal] = useState(false);
   const [ viewPoint, setViewPoint ] = useState(0); 
  const handleModal = (state) => setOpenModal(state);
@@ -20,4 +20,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Tap;

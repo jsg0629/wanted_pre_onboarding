@@ -3,9 +3,12 @@ import dummyTweets from "../static/dummyData";
 import Tweet from "../component/Tweet";
 import Dropdown from "../component/Dropdown";
 import React, { useState } from "react";
+import Toggle from "../component/Toggle";
 
 const Feed = () => {
   const [filteredTweets, filteringTweets] = useState(dummyTweets);
+  const [isDarkmode, setDarkmode] = useState(false);
+
 
 
   return (
@@ -26,7 +29,8 @@ const Feed = () => {
         tweets={dummyTweets}
         filteringTweets={filteringTweets}
       />
-      <ul className="Feed__contents">
+      <Toggle isDarkmode={isDarkmode} setDarkmode={setDarkmode}/>
+      <ul className={isDarkmode ? "Feed__contents darkmode" : "Feed__contents"}>
         {filteredTweets.map((el) => {
           return <Tweet key={el.id} tweet={el} />;
         })}
