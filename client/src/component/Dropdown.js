@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Dropdown = ({tweets, filteringTweets}) => {
+function Dropdown({tweets, filteringTweets}) {
 
-    let userNameValues = [];
+    const userNameValues = []
     tweets.forEach((el) => {
       if (!userNameValues.includes(el.username)) {
-        userNameValues.push(el.username);
+        userNameValues.push(el.username)
       }
     })
     
@@ -14,12 +14,12 @@ const Dropdown = ({tweets, filteringTweets}) => {
       <select
         onChange={(e) => {
           if (e.target.value === "All") {
-            filteringTweets(tweets);
+            filteringTweets(tweets)
           } else {
             const filteredTweets = tweets.filter((el) => {
-              return el.username === e.target.value;
-            });
-            filteringTweets(filteredTweets);
+              return el.username === e.target.value
+            })
+            filteringTweets(filteredTweets)
           }
         }}
       >
@@ -29,11 +29,11 @@ const Dropdown = ({tweets, filteringTweets}) => {
             <option key={i} value={el}>
               {el}
             </option>
-          );
+          )
         })}
       </select>
     </div>
-  );
-};
+  )
+}
 
-export default Dropdown;
+export default Dropdown

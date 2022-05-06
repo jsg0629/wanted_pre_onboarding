@@ -1,31 +1,30 @@
-
 .Message__container {
-  border-bottom: 1px solid rgb(235, 238, 240);
   margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(235, 238, 240);
 }
 
 .Message__wrapper {
-  font-weight: 500;
-  height: 97px;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem;
   align-items: center;
+  height: 97px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
   color: white;
   background-color: #097e4d;
 }
 
 .Message__profile {
-  padding-left: 20px;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
   margin: 0.5rem;
 }
 
 .Message__content {
-  flex: 1 0 80vh;
-  border: 2px solid #097e4d;
   display: flex;
+  flex: 1 0 80vh;
   align-items: center;
   overflow-y: scroll;
+  border: 2px solid #097e4d;
 }

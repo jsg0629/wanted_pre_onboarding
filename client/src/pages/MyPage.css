@@ -1,31 +1,30 @@
-
 .myInfo__container {
-  border-bottom: 1px solid rgb(235, 238, 240);
   margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(235, 238, 240);
 }
 
 .myInfo__wrapper {
-  font-weight: 500;
-  height: 97px;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem;
   align-items: center;
+  height: 97px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
   color: white;
   background-color: #eb9705;
 }
 
 .myInfo__profile {
-  padding-left: 20px;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
   margin: 0.5rem;
 }
 
 .myInfo__detail {
-  flex: 1 0 80vh;
-  border: 2px solid #eb9705;
   display: flex;
+  flex: 1 0 80vh;
   align-items: center;
   overflow-y: scroll;
+  border: 2px solid #eb9705;
 }

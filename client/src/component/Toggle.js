@@ -1,21 +1,21 @@
-import React from 'react';
-import './Toggle.css';
+import React from 'react'
+import './Toggle.css'
 
 
-const Toggle = ({isDarkmode, setDarkmode}) => {
+function Toggle({isDarkmode, setDarkmode}) {
     const handleToggle = () => {
         if(isDarkmode){
-            setDarkmode(false);
+            setDarkmode(false)
         } else {
             setDarkmode(true)
         }
-      };
+      }
 
     return(
-        <span id="toggle">
-            <input className="toggle__btn" type="checkbox" defaultChecked={isDarkmode} onClick={() => {handleToggle();}}></input>
-            <label className="toggle__label"></label>
-        </span>
+      <span id="toggle">
+        <input className="toggle__btn" type="checkbox" defaultChecked={isDarkmode} onClick={() => {handleToggle()}} />
+        <label className="toggle__label" />
+      </span>
     )
 }
 

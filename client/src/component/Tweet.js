@@ -1,8 +1,8 @@
-import React from 'react';
-import './Tweet.css';
+import React from 'react'
+import './Tweet.css'
 
-const Tweet = ({ tweet }) => {
-  const parsedDate = new Date(tweet.createdAt).toLocaleDateString('ko-kr');
+function Tweet({ tweet }) {
+  const parsedDate = new Date(tweet.createdAt).toLocaleDateString('ko-kr')
 
   return (
     <li className="tweet" id={tweet.id}>
@@ -17,11 +17,11 @@ const Tweet = ({ tweet }) => {
           </div>
         </div>
         <div className="tweet__message">
-           {tweet.content}
+          {tweet.content}
         </div>
       </div>
     </li>
-  );
-};
+  )
+}
 
-export default Tweet;
+export default Tweet

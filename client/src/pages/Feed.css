@@ -1,34 +1,31 @@
-
 .Feed__container {
-  border-bottom: 1px solid rgb(235, 238, 240);
   margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(235, 238, 240);
 }
 
 .Feed__wrapper {
-  font-weight: 500;
-  height: 97px;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem;
   align-items: center;
+  height: 97px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
   color: white;
   background-color: #003380;
 }
 
 .Feed__detail {
-  padding-left: 20px;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
   margin: 0.5rem;
 }
 
-
-
 .Feed__count {
-  margin: 0.5rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
 }
 
 .Feed___count__text {
@@ -43,11 +40,11 @@
 
 .Feed__contents {
   flex: 1 0 80vh;
-  border: 2px solid #003380;
   overflow-y: scroll;
+  border: 2px solid #003380;
 }
 
 .darkmode {
+  color: white;
   background-color: black;
-  color : white
-} 
+}

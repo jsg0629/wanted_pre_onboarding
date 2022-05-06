@@ -1,43 +1,46 @@
-.tap{
-    position: relative;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
-    box-shadow: rgb(4 17 29 / 25%) 0px 0px 3px 0px;   
-  }
-  .tap__tit {
-    font-weight: 500;
-    color: rgba(4, 17, 29, 0.75);
-  }
-  
-  .tap__selleted__tit {
-    font-weight: 500;
-    color: black;
-  }
-  
-  .tap a:hover {
-    color: black;
-    transition: all 0.8s ease-out;
-  }
-
-/* active tap marker */ 
-
-.tap__item:nth-of-type(1).tap__selleted__tit ~ .active__tab__marker{
-	left: 0;
+.tap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  box-shadow: rgb(4 17 29 / 25%) 0 0 3px 0;
 }
-.tap__item:nth-of-type(2).tap__selleted__tit ~ .active__tab__marker{
-	left: 33.334%;  
+
+.tap__tit {
+  font-weight: 500;
+  color: rgba(4, 17, 29, 75%);
 }
-.tap__item:nth-of-type(3).tap__selleted__tit ~ .active__tab__marker{
-	left: 66.668%;
+
+.tap__selleted__tit {
+  font-weight: 500;
+  color: black;
+}
+
+.tap a:hover {
+  color: black;
+  transition: all 0.8s ease-out;
+}
+
+/* active tap marker */
+
+.tap__item:nth-of-type(1).tap__selleted__tit ~ .active__tab__marker {
+  left: 0;
+}
+
+.tap__item:nth-of-type(2).tap__selleted__tit ~ .active__tab__marker {
+  left: 33.334%;
+}
+
+.tap__item:nth-of-type(3).tap__selleted__tit ~ .active__tab__marker {
+  left: 66.668%;
 }
 
 .active__tab__marker {
+  position: absolute;
+  bottom: 0;
+  width: 33.334%;
   height: 3px;
-	width: 33.334%;
-	background-color: #333;
-	position: absolute;
-	bottom: 0;
-	transition: 0.3s;
+  background-color: #333333;
+  transition: 0.3s;
 }

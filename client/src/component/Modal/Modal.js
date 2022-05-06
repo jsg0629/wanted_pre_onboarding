@@ -1,8 +1,8 @@
-import React from 'react';
-import Loginform from './Loginform';
-import './Modal.css';
+import React from 'react'
+import Loginform from './Loginform'
+import './Modal.css'
 
-const Modal = ({ openModal, handleModal }) => {
+function Modal({ openModal, handleModal }) {
     // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴    open, close, header 
     return (
       // 모달이 열릴때 openModal 클래스가 생성된다.
@@ -26,7 +26,7 @@ const Modal = ({ openModal, handleModal }) => {
           </section>
         ) : null}
       </div>
-    );
-  };
+    )
+  }
 
-  export default Modal;
+  export default Modal
