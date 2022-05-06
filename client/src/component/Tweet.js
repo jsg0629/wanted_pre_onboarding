@@ -1,5 +1,5 @@
 import React from 'react'
-import './Tweet.css'
+import './Tweet.scss'
 
 function Tweet({ tweet }) {
   const parsedDate = new Date(tweet.createdAt).toLocaleDateString('ko-kr')

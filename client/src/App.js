@@ -6,8 +6,8 @@ import Feed from "./pages/Feed"
 import MyPage from "./pages/MyPage"
 import Message from "./pages/Message"
 
-import "./App.css"
-import "./reset.css"
+import "./App.scss"
+import "./reset.scss"
 
 function App() {
   return (

@@ -1,13 +1,13 @@
-import "./Feed.css";
-import dummyTweets from "../static/dummyData";
-import Tweet from "../component/Tweet";
-import Dropdown from "../component/Dropdown";
-import React, { useState } from "react";
-import Toggle from "../component/Toggle";
+import "./Feed.scss"
+import dummyTweets from "../static/dummyData"
+import Tweet from "../component/Tweet"
+import Dropdown from "../component/Dropdown"
+import React, { useState } from "react"
+import Toggle from "../component/Toggle"
 
-const Feed = () => {
-  const [filteredTweets, filteringTweets] = useState(dummyTweets);
-  const [isDarkmode, setDarkmode] = useState(false);
+function Feed() {
+  const [filteredTweets, filteringTweets] = useState(dummyTweets)
+  const [isDarkmode, setDarkmode] = useState(false)
 
 
 
@@ -32,11 +32,11 @@ const Feed = () => {
       <Toggle isDarkmode={isDarkmode} setDarkmode={setDarkmode}/>
       <ul className={isDarkmode ? "Feed__contents darkmode" : "Feed__contents"}>
         {filteredTweets.map((el) => {
-          return <Tweet key={el.id} tweet={el} />;
+          return <Tweet key={el.id} tweet={el} />
         })}
       </ul>
     </>
-  );
-};
+  )
+}
 
-export default Feed;
+export default Feed

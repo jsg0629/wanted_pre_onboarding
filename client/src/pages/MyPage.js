@@ -1,7 +1,7 @@
-import React from "react";
-import "./MyPage.css";
+import React from "react"
+import "./MyPage.scss"
 
-const MyPage = () => {
+function MyPage() {
   return (
     <>
       <div className="myInfo__container">
@@ -9,9 +9,9 @@ const MyPage = () => {
           <div className="myInfo__profile">Guest Profile</div>
         </div>
       </div>
-      <div className="myInfo__detail"></div>
+      <div className="myInfo__detail" />
     </>
-  );
-};
+  )
+}
 
-export default MyPage;
+export default MyPage

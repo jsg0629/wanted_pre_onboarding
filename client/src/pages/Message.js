@@ -1,7 +1,7 @@
-import React from "react";
-import "./Message.css";
+import React from "react"
+import "./Message.scss"
 
-const Message = () => {
+function Message() {
   return (
     <>
       <div className="Message__container">
@@ -9,9 +9,9 @@ const Message = () => {
           <div className="Message__profile">Guest Message</div>
         </div>
       </div>
-      <div className="Message__content"></div>
+      <div className="Message__content" />
     </>
-  );
-};
+  )
+}
 
-export default Message;
+export default Message

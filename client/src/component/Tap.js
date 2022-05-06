@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link  } from 'react-router-dom'
 import Modal from './Modal/Modal'
-import './Tap.css'
+import './Tap.scss'
 
 
 function Tap() {

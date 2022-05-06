@@ -1,5 +1,5 @@
 import React from 'react'
-import './Toggle.css'
+import './Toggle.scss'
 
 
 function Toggle({isDarkmode, setDarkmode}) {
